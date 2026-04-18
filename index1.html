@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(104, 102, 102, 0.2);
+    border-top: 4px solid transparent;
+    transition: transform 1s ease; 
+    position: relative;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: scale(1.15); 
+    box-shadow: 0 10px 30px rgba(82, 82, 82, 0.3);
+}
+
+.enterprise { border-top-color: #e47591; }
+.professional { border-top-color: #e4ae63; }
+.standard { border-top-color: #6abbe6; }
+.basic { border-top-color: #96e058; }
+
+.header {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price span {
+    font-size: 14px;
+    color: #c7c7c7;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+ul li {
+    padding: 8px 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.enterprise .btn { background: #f77293; }
+.professional .btn { background: #e5b26a; }
+.standard .btn { background: #71b8de; }
+.basic .btn { background: #98dc61; }
+
+.btn:hover {
+    filter: brightness(70%);
+}
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="card enterprise">
+            <div class="header">ENTERPRISE</div>
+            <div class="price">$69 <span>per month</span></div>
+            <ul>
+                <li>10GB disk space</li>
+                <li>100GB monthly bandwidth</li>
+                <li>20 email accounts</li>
+                <li>Unlimited subdomens</li>
+            </ul>
+            <button class="btn">BUY</button>
+        </div>
+
+        <div class="card professional">
+            <div class="header">PROFESSIONAL</div>
+            <div class="price">$29 <span>per month</span></div>
+            <ul>
+                <li>5GB disk space</li>
+                <li>60GB monthly bandwidth</li>
+                <li>10 email accounts</li>
+                <li>Unlimited subdomens</li>
+            </ul>
+            <button class="btn">BUY</button>
+        </div>
+
+        <div class="card standard">
+            <div class="header">STANDART</div>
+            <div class="price">$19 <span>per month</span></div>
+            <ul>
+                <li>3GB disk space</li>
+                <li>30GB monthly bandwidth</li>
+                <li>5 email accounts</li>
+                <li>Unlimited subdomens</li>
+            </ul>
+            <button class="btn">BUY</button>
+        </div>
+
+        <div class="card basic">
+            <div class="header">BASIC</div>
+            <div class="price">$9 <span>per month</span></div>
+            <ul>
+                <li>1GB disk space</li>
+                <li>10GB monthly bandwidth</li>
+                <li>2 email accounts</li>
+                <li>Unlimited subdomens</li>
+            </ul>
+            <button class="btn">BUY</button>
+        </div>
+                <hr>
+    <p align="center">
+    <b>Перейти до завдань:</b><br><br>
+    <a href="index.html"><button>Завдання 1</button></a>
+    <a href="index1.html"><button>Завдання 2</button></a>
+
+</p>
+    </div>
+
+
+</body>
+</html>

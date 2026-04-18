@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    margin: 0;
+}
+
+.sidebar {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    height: 100vh;      
+    width: 80px;        
+    background-color: #808080; 
+    color: white;
+    overflow: hidden; 
+    transition: width 1s ease;   
+}
+
+.sidebar:hover {
+    width: 250px;       
+}
+
+.menu-header {
+    padding: 30px 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li a {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    transition: background 0.3s;
+}
+
+.sidebar li a:hover {
+    background-color: #606060;
+}
+
+.sidebar img {
+    width: 30px;
+    margin-right: 30px; 
+}
+
+.sidebar span {
+    opacity: 0;        
+    transition: opacity 0.5s;
+}
+
+.sidebar:hover span {
+    opacity: 1;        
+}
+
+.content {
+    margin-left: 100px; 
+    padding: 40px;
+}
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-header">MENU</div>
+        <ul>
+            <li><a href="#"><img src="img/edit.png"> <span>EDIT</span></a></li>
+            <li><a href="#"><img src="img/favorites.png"> <span>FAVORITES</span></a></li>
+            <li><a href="#"><img src="img/history.png"> <span>HISTORY</span></a></li>
+            <li><a href="#"><img src="img/security.png"> <span>SECURITY</span></a></li>
+            <li><a href="#"><img src="img/settings.png"> <span>SETTINGS</span></a></li>
+        </ul>
+    </div>
+    <div  class="content">
+        <h1>WHAT IS LOREM IPSUM?</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, similique maxime. Neque, laborum ipsam placeat dolore aspernatur suscipit dolor quaerat maiores saepe molestias, atque impedit harum unde itaque a non?</p>
+        <h1>WHY DO WE USE IT?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse natus minus culpa facere error quos blanditiis deserunt harum est debitis labore, hic architecto totam nulla eveniet doloribus dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium praesentium veritatis similique eius quod eveniet dolore eum cum quisquam alias illo Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum assumenda perspiciatis id. Ratione perspiciatis laboriosam reiciendis inventore soluta tempore blanditiis nobis nihil fugit. Culpa odit ducimus atque aut nesciunt hic?itaque minus at adipisci inventore odio, animi laudantium! Ab?Esse, dolor!</p>
+        <h1>WHERE DOES IT COME FROM?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sequi nesciunt delectus voluptate sed blanditiis nemo, numquam praesentium mollitia animi omnis nisi, fugit atque esse itaque nobis velit aspernatur laudantium. adipisicing elit. Minima earum obcaecati quibusdam ipsam dolorum quis accusantium dolorem harum necessitatibus eligendi magni, voluptas nemo odit tenetur, repellat rerum dolores labore fugiat?</p>
+      <hr>
+    <p align="center">
+    <b>Перейти до завдань:</b><br><br>
+    <a href="index.html"><button>Завдання 1</button></a>
+    <a href="index1.html"><button>Завдання 2</button></a>
+
+</p>
+    </div>
+
+
+</body>
+</html>
